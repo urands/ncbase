@@ -1,4 +1,16 @@
 var elixir = require('laravel-elixir');
+var gulp = require('gulp');
+var bower = require('gulp-bower');
+
+
+
+
+
+
+gulp.task('bower', function() {
+  return bower( { directory: './bower_components', cwd: './app' })
+    .pipe(gulp.dest('lib/'))
+});
 
 /*
  |--------------------------------------------------------------------------
