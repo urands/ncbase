@@ -1,4 +1,4 @@
-var elixir = require('laravel-elixir');
+//var elixir = require('laravel-elixir');
 var gulp = require('gulp');
 var bower = require('gulp-bower');
 
@@ -8,7 +8,7 @@ var bower = require('gulp-bower');
 
 
 gulp.task('bower', function() {
-  return bower( { directory: './bower_components', cwd: './app' })
+  return bower( { directory: './bower_components', cwd: './' })
     .pipe(gulp.dest('lib/'))
 });
 
@@ -23,6 +23,8 @@ gulp.task('bower', function() {
  |
  */
 
+/*
 elixir(function(mix) {
     mix.less('app.less');
 });
+*/
